@@ -20,6 +20,10 @@ jobs:
         run: npm install
         shell: bash
 
+      - name: run tests
+        run: npm run test
+        shell: bash
+
   goodbye:
     runs-on: ubuntu-latest
     steps:
