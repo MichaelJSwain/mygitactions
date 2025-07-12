@@ -16,12 +16,12 @@ jobs:
       - uses: actions/checkout@v2
       - name: checkout code
       
-      - name: install dependencies
-        run: npm install
+      - run: npm install
+        name: install dependencies
 
-      - name: run tests
-        run: npm run test
-
+      - run: npm run test 
+        name: run tests
+        
   goodbye:
     runs-on: ubuntu-latest
     steps:
