@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: hello world
-        run: node index.js
+        run: npm run test
         shell: bash
 
   goodbye:

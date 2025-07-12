@@ -1,1 +1,3 @@
-console.log("hello from index.js");
+export const helloWorld = () => {
+    return 'hello world';
+}
