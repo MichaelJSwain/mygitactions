@@ -14,9 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: hello world
+      - name: checkout code
+      
+      - name: install dependencies
+        run: npm install
+
+      - name: run tests
         run: npm run test
-        shell: bash
 
   goodbye:
     runs-on: ubuntu-latest
